@@ -2,7 +2,7 @@
 
 ![Imagem do projeto finalizado](portifolio-preview.png)
 
-<h4 align="center"><a href="https://jedev1.github.io/Meu-portifolio/">Confira o projeto aqui</a></h4>
+<h4 align="center"><a href="https://jedev1.github.io/portifolio-joao/">Confira o projeto aqui</a></h4>
 
 ---
 
