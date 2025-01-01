@@ -1,8 +1,38 @@
-# React + Vite
+<h1 align="center">Portifólio - João 👾</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Imagem do projeto finalizado](Imagens/portifolio.png)
 
-Currently, two official plugins are available:
+<h4 align="center"><a href="https://jedev1.github.io/Meu-portifolio/">Confira o projeto aqui</a></h4>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 💻 Sobre
+
+Projeto feito com o principal objetivo de mostrar minhas habilidades como desenvolvedor.
+
+## 🤯 O site é composto por:
+
+- **Home:** Minha apresentação;
+- **Sobre mim:** Falo um pouco sobre minha trajetória e meu estado atual;
+- **Conhecimentos:** As tecnologias que tenho conhecimento;
+- **Projetos:** Alguns projetos recentes que fiz;
+- **Fale comigo:** Área com meios para contato comigo;
+- **Redes:** Minhas redes sociais disponíveis no menu de navegação e no rodapé do site.
+
+## 🧠 Tecnologias utilizadas:
+
+O site **ainda está em desenvolvimento**, pois estou em constante aprendizado. Mas até aqui utilizei as tecnologias:
+
+<div>
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+</div>
+
+## 📚 Alguns conceitos aplicados
+
+Neste projeto apliquei os seguintes pontos:
++ Semântica HTML;
++ Pontos de acessibilidade;
++ Responsividade;
++ Mobile first;
