@@ -1,0 +1,34 @@
+@mixin flex_style($content, $align){
+    display: flex;
+    justify-content: $content;
+    align-items: $align;
+}
+
+
+.container{ 
+    margin-top: 90px;
+    .cards{
+        @include flex_style(center, center);
+        margin: 35px;
+    }
+}
+
+.languages a img{
+    transition: scale 0.2s ease-in-out;
+}
+
+.languages-mobile{
+    display: none;
+}
+
+.languages-mobile a img{
+    transition: scale 0.2s ease-in-out;
+}
+
+.languages-mobile a img:hover{
+    scale: (1.1);
+}
+
+.languages a img:hover{
+    scale: (1.1);
+}

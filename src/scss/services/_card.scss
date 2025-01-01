@@ -1,0 +1,41 @@
+@mixin font_style($font_family, $font_size){
+    font-family: $font_family, serif;
+    font-size: $font_size;
+}
+
+@mixin flex_style($content, $align_itens){
+    display: flex;
+    align-items: $align_itens;
+    justify-content: $content;
+}
+
+.card{
+    background-color: $neutral-color;
+    margin-right: 30px;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 5px 5px;
+    width: 410px;
+    height: 350px;
+    scale: (1);
+    transition: scale 0.2s ease-in;
+    &:hover{
+        scale: (1.1);
+        color: $white-color
+    }
+    .title{
+        @include font_style("Rubik", 21px);
+        margin-bottom: 20px;
+        @include flex_style(center, center);
+        cursor: pointer;
+        span{
+            margin-right: 3px;
+            @include flex_style(center, center);
+        }
+    }
+
+    .description{
+        @include font_style("Rubik", 14px );
+        cursor: pointer;
+    }
+}

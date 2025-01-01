@@ -1,0 +1,108 @@
+@mixin flex_style($content, $align){
+    display: flex;
+    justify-content: $content;
+    align-items: $align;
+}
+
+
+@mixin font_style($font_family, $font_size){
+    font-family: $font_family, serif;
+    font-size: $font_size;
+}
+
+.home {
+    position: relative;
+    @include flex_style(center, center);
+    height: 100vh;
+    width: 100vw; 
+    white-space: nowrap;
+    z-index: 0; 
+  
+    .image-bg img{
+      position: absolute;
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .infos{
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+
+        &:hover{
+            color: $neutral-color;
+            font-weight: 600;
+            font-style: bold;
+        }
+
+        .subtitle{
+            @include font_style("VT323", 35px );
+            margin-bottom: 30px;
+        } 
+        
+        .title{
+            @include font_style("VT323", 40px);
+            margin-bottom: 20px;
+        }
+
+        .animated-text{
+            @include font_style("VT323", 25px);
+            font-weight: 600;
+            min-width: 280px;
+        }
+        
+        .animated-text span{
+            position: relative;
+        }
+        
+        .animated-text span::before{
+            content: "Front-end";
+            color: $dark-color;
+            animation: words 20s infinite;
+        }
+        
+        .animated-text span::after{
+            content: "";
+            position: absolute;
+            width: calc(100% + 8px);
+            height: 100%;
+            background-color: $neutral-color;
+            border-left: 2px solid $second-color;
+            right: -8px;
+            animation: cursor .8s infinite, typing 20s steps(14) infinite;
+        }
+        
+        @keyframes cursor {
+            to{
+                border-left: 2px solid $dark-color;
+            }
+        }
+        
+        @keyframes words {
+            0%,20%{
+                content: "Front-end";
+            }
+            21%,40%,41%,61%{
+                content: "De jogos";
+            }
+            80%,81%,100%{
+                content: "De apps";
+            }
+        }
+        
+        @keyframes typing {
+            10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+                width: 0;
+            }
+            5%,20%,25%,40%,45%,60%,65%,80%,85%{
+                width: calc(100% + 8px);
+            }
+        }
+        
+    }
+}

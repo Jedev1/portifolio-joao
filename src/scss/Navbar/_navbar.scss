@@ -1,0 +1,81 @@
+@mixin flex_style($content, $align){
+    display: flex;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@mixin font_style($font_family, $font_size){
+    font-family: $font_family, serif;
+    font-size: $font_size;
+}
+
+
+.header{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    @include flex_style(space-between, center );
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    z-index: 1;
+    .logo a{
+        @include flex_style(center, center);
+        span{
+            margin-left: 10px;
+            @include font_style("Poppins", 30px);
+            transition: color 0.3s ease-in-out;
+            &:hover{
+                color: $white-color;
+            }
+        }
+
+    }
+
+    .hamburger {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        display: flex;
+        li{
+            margin-right: 30px;
+            @include font_style("Poppins", 16px );
+            a{
+                padding-bottom: 30px;
+                transition: color 0.3s ease-in-out;
+                &:hover{
+                    color: $white-color;
+                    border-bottom: 1px solid $white-color;
+                }
+            }
+        }
+    }
+
+    .social-medias .social{
+        @include flex_style(center, center );
+        li{
+            a{
+                margin-right: 10px;
+                border: 1px solid $black-color;
+                border-radius: 100%;
+                padding: 10px;
+                @include flex_style(center, center );
+                transition: border, color 0.3s ease-in-out;
+                &:hover{
+                    color: $white-color;
+                    border-color: $white-color;
+                }
+            }
+        }
+    }
+}

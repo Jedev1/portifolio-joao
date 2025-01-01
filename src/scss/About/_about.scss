@@ -1,0 +1,58 @@
+@mixin flex_style($content, $align){
+    display: flex;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@mixin font_style($font_family, $font_size){
+    font-family: $font_family, serif;
+    font-size: $font_size;
+}
+
+.about{
+    .container{
+        @include flex_style(center, center);
+        padding: 40px;
+        .image-profile{
+            width: 30%;
+            margin-right: 180px;
+            img{
+                width: 100%;
+                border: 1px solid $white-color;
+                border-radius: 70%;
+            }
+        }
+
+        .info-about{
+            padding: 70px;
+            @include flex_style(center, center );
+            flex-direction: column;
+            .title{
+                @include flex_style(center, center );
+                @include font_style("Rubik", 25px );
+                margin-bottom: 20px;
+            }
+
+            .text{
+                width: 450px;
+                @include font_style("Rubik", 15px );
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+
+            .btn-CV{
+                width: 230px;
+                height: 50px;
+                background-color: $second-color;
+                @include flex_style(center, center );
+                border-radius: 30px;
+                transition: background-color, color 0.2s ease-in-out;
+
+                &:hover{
+                    background-color: $dark-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
