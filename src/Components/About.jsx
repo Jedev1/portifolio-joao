@@ -16,7 +16,7 @@ const About = () => {
                 <br/>
                 Tenho sólida experiência em tecnologias como HTML, CSS, SASS, ReactJS, GDscript, Javascript, Lua e Python, além de estar sempre atualizado com as melhores práticas e tendências do mercado. Também possuo habilidade em trabalhar com design responsivo, acessibilidade e otimização de desempenho, garantindo que os produtos sejam eficientes e acessíveis em qualquer dispositivo.</p>
 
-                <a href="#" className="btn-CV">Ver Curriculo</a>
+                <a href="https://drive.google.com/file/d/15pOEHXpbUe-KoLfP6niRrU-_MbwpAAmT/view?usp=sharing" className="btn-CV">Ver Curriculo</a>
             </div>
         </div>
     </section>
