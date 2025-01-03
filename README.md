@@ -1,8 +1,38 @@
-# React + Vite
+<h1 align="center">Portifólio - João 👾</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Imagem do projeto finalizado](portifolio-preview.png)
 
-Currently, two official plugins are available:
+<h4 align="center"><a href="https://jedev1.github.io/portifolio-joao/">Confira o projeto aqui</a></h4>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 💻 Sobre
+
+Projeto feito com o principal objetivo de mostrar minhas habilidades como desenvolvedor.
+
+## 🤯 O site é composto por:
+
+- **Home:** Minha apresentação;
+- **Sobre mim:** Falo um pouco sobre minha trajetória e meu estado atual;
+- **Conhecimentos:** As tecnologias que tenho conhecimento;
+- **Projetos:** Alguns projetos recentes que fiz;
+- **Fale comigo:** Área com meios para contato comigo;
+- **Redes:** Minhas redes sociais disponíveis no menu de navegação e no rodapé do site.
+
+## 🧠 Tecnologias utilizadas:
+
+O site **ainda está em desenvolvimento**, pois estou em constante aprendizado. Mas até aqui utilizei as tecnologias:
+
+<p align="center">
+  <a href="https://github.com/Jedev1">
+    <img src="https://skillicons.dev/icons?i=html,css,javascript,react,sass" />
+  </a>
+</p>
+
+## 📚 Alguns conceitos aplicados
+
+Neste projeto apliquei os seguintes pontos:
++ Semântica HTML;
++ Pontos de acessibilidade;
++ Responsividade;
++ Mobile first;
